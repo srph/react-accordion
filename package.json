@@ -1,6 +1,6 @@
 {
   "name": "@srph/react-accordion",
-  "description": "Build markup-agnostic accordions"
+  "description": "Build markup-agnostic accordions",
   "version": "0.1.0",
   "main": "lib/index.js",
   "scripts": {
