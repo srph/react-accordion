@@ -1,7 +1,7 @@
 # React Accordion [![npm version](https://img.shields.io/npm/v/@srph/react-accordion.svg?style=flat-square)](https://npmjs.com/packages/@srph/react-accordion) [![Build Status](https://img.shields.io/travis/srph/react-accordion.svg?style=flat-square)](https://travis-ci.org/srph/react-accordion?branch=master)
 Build mark-up agnostic accordions
 
-View [demo](http://usher-diana-72251.netlify.com). View [examples](storybook/accordion.js).
+View [demo](http://xenodochial-beaver-320a9d). View [examples](storybook/accordion.js).
 
 ## Why?
 Most projects work fine. In addition, accordions are pretty simple in nature. However, this library was built for _simplicity_:
@@ -114,7 +114,7 @@ All other props are passed down to the `button` root element as usual.
 > **NOTE**: `AccordionButton` ignores `onClick` and `type`.
 
 ## Setup
-You can check the [demo](http://usher-diana-72251.netlify.com), or build it yourself locally:
+You can check the [demo](http://xenodochial-beaver-320a9d), or build it yourself locally:
 
 ```bash
 npm install
