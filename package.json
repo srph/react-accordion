@@ -12,7 +12,7 @@
     "postinstall": "npm run build",
     "storybook": "start-storybook -p 9001 -c storybook",
     "storybook:publish": "build-storybook -c storybook",
-    "test": "jest"
+    "test": "jest .test.js"
   },
   "repository": {
     "type": "git",
