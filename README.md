@@ -1,5 +1,5 @@
 # React Accordion [![npm version](https://img.shields.io/npm/v/@srph/react-accordion.svg?style=flat-square)](https://npmjs.com/packages/@srph/react-accordion) [![Build Status](https://img.shields.io/travis/srph/react-accordion.svg?style=flat-square)](https://travis-ci.org/srph/react-accordion?branch=master)
-Build mark-up agnostic accordions
+Build markup-agnostic accordions
 
 View [demo](http://xenodochial-beaver-320a9d). View [examples](storybook/accordion.js).
 
