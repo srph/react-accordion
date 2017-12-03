@@ -93,7 +93,7 @@ All other props are passed down to the `div` root element as usual.
 | paneClassName | `string` (required) | The classname to pass all `AccordionPane`.  |
 | openClassName | `string` | The classname to pass to the active `AccordionPane`. Defaults to `active`. |
 | defaultActive | `number` | Default open accordion. Defaults to `0`. |
-| component | `string|ReactElement` | Component / element to use to wrap provided children. Defaults to `div` |
+| component | `string\|ReactElement` | Component / element to use to wrap provided children. Defaults to `div` |
 
 > **NOTE**: `Accordion` wraps your provided children inside a `div`. To customize this, see the `component` prop.
 
