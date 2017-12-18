@@ -101,7 +101,7 @@ All other props are passed down to the `div` root element as usual.
 
 All other props are passed down to the `div` root element as usual.
 
-> **NOTE**: `AccordionButton` ignores `className`.
+> **NOTE**: `AccordionPane` ignores `className`.
 
 ### AccordionButton
 
