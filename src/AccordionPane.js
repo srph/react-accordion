@@ -15,7 +15,7 @@ export default class AccordionPane extends Component {
   render() {
     const {accordion} = this.context;
     const {index, ...props} = this.props;
-    
+
     return (
       <div {...props} className={c(accordion.paneClassName, {
         [accordion.openClassName]: accordion.active === index
@@ -30,8 +30,4 @@ AccordionPane.contextTypes = {
 
 AccordionPane.childContextTypes = {
   accordion: T.object
-}
-
-AccordionPane.propTypes = {
-  index: T.number.isRequired
 }
