@@ -5,8 +5,8 @@ import Accordion, {AccordionPane} from '../'
 test('it should display paneClassName from context', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
-      <AccordionPane index={0}>Sup</AccordionPane>
-      <AccordionPane index={1}>Sup 2</AccordionPane>
+      <AccordionPane>Sup</AccordionPane>
+      <AccordionPane>Sup 2</AccordionPane>
     </Accordion>
   )
 
@@ -17,8 +17,8 @@ test('it should display paneClassName from context', () => {
 test('it should display active classname', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
-      <AccordionPane index={0}>Sup</AccordionPane>
-      <AccordionPane index={1}>Sup 2</AccordionPane>
+      <AccordionPane>Sup</AccordionPane>
+      <AccordionPane>Sup 2</AccordionPane>
     </Accordion>
   )
 
@@ -29,7 +29,7 @@ test('it should display active classname', () => {
 test('it should pass through props to the node element except index', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
-      <AccordionPane index={0} target="_blank" data-cool="69">
+      <AccordionPane target="_blank" data-cool="69">
         foo
       </AccordionPane>
     </Accordion>

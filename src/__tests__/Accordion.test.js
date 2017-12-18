@@ -4,10 +4,10 @@ import Accordion from '../'
 import {shallow, mount} from 'enzyme'
 import {ShouldReceiveContext, ShouldReceiveProps} from './fixtures';
 
-test('it should render children', () => {
+test.only('it should render children', () => {
   const CoolKid = () => <div />
-  const wrapper = shallow(<Accordion paneClassName="open"><CoolKid /></Accordion>)
-  expect(wrapper.contains(<CoolKid />)).toBe(true)
+  const wrapper = mount(<Accordion paneClassName="open"><CoolKid /><CoolKid /><CoolKid /></Accordion>)
+  expect(wrapper.find(CoolKid)).toHaveLength(3)
 })
 
 test('it should add index to its children', () => {
