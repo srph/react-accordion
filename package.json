@@ -19,8 +19,7 @@
     "url": "https://github.com/srph/react-accordion"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "sinon": "^4.0.1"
+    "prop-types": "^15.5.10"
   },
   "peerDependencies": {
     "react": "^15.6.1",
@@ -47,7 +46,6 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
-    "sinon": "^4.0.1",
     "webpack": "2.6.1"
   }
 }

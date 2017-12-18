@@ -2,17 +2,6 @@ import React from 'react'
 import {shallow, mount} from 'enzyme'
 import Accordion, {AccordionPane, AccordionButton} from '../'
 import {ShouldReceiveContext, ShouldReceiveProps} from './fixtures';
-import sinon from 'sinon';
-
-let sandbox = null
-
-beforeEach(() => {
-  sandbox = sinon.createSandbox()
-})
-
-afterEach(() => {
-  sandbox.restore()
-})
 
 test('it should call change active when clicked', () => {
   const wrapper = mount(
@@ -53,7 +42,7 @@ test('it should pass active to children', () => {
 })
 
 test('it should pass through props to the node element except some', () => {
-  const handleOpen = sandbox.spy()
+  const handleOpen = jest.fn()
 
   const wrapper = mount(
     <Accordion paneClassName="pane">
