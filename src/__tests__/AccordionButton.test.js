@@ -17,7 +17,7 @@ afterEach(() => {
 test.only('it should call change active when clicked', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
-      <AccordionPane index={0}>
+      <AccordionPane>
         <AccordionButton>{() => 'Step 1'}</AccordionButton>
         <ShouldReceiveContext />
       </AccordionPane>
@@ -39,7 +39,7 @@ test.only('it should call change active when clicked', () => {
 test.only('it should pass active to children', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
-      <AccordionPane index={0}>
+      <AccordionPane>
         <AccordionButton>{(active) => active ? 'Yes' : 'No'}</AccordionButton>
       </AccordionPane>
     </Accordion>
@@ -57,7 +57,7 @@ test.only('it should pass through props to the node element except some', () => 
 
   const wrapper = mount(
     <Accordion paneClassName="pane">
-      <AccordionPane index={0}>
+      <AccordionPane>
         Sup
         <AccordionButton data-hehe="69" title="hehe" onClick={handleOpen}>{() => 'Step 1'}</AccordionButton>
       </AccordionPane>

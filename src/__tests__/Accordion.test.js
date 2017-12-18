@@ -10,6 +10,14 @@ test('it should render children', () => {
   expect(wrapper.contains(<CoolKid />)).toBe(true)
 })
 
+test.only('it should add index to its children', () => {
+  const CoolKid = () => <div />
+  const BadKid = () => <div />
+  const wrapper = mount(<Accordion paneClassName="open"><CoolKid /><BadKid /></Accordion>)
+  expect(wrapper.find(CoolKid).first().prop('index')).toEqual(0)
+  expect(wrapper.find(BadKid).first().prop('index')).toEqual(1)
+})
+
 test('it should default active to first index', () => {
   const wrapper = mount(<Accordion paneClassName="open"><ShouldReceiveContext /></Accordion>)
   expect(wrapper.find(ShouldReceiveProps).props().accordion.active).toBe(0)

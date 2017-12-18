@@ -20,11 +20,15 @@ export default class Accordion extends Component {
   }
 
   render() {
-    const {paneClassName, openClassName, defaultActive, component, ...props} = this.props;
+    const {paneClassName, openClassName, defaultActive, component, children, ...props} = this.props;
     const Component = component;
 
     return (
-      <Component {...props} />
+      <Component {...props}>
+        {Children.map(children, (Child, i) =>
+          cloneElement(Child, { index: i })
+        )}
+      </Component>
     );
   }
 
