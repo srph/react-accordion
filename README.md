@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
     <Accordion paneClassName="panel" openClassName="-open">
-      <AccordionPane index={0}>
+      <AccordionPane>
         <div className="heading">
           <h4 className="title">What does X mean?</h4>
 
@@ -57,7 +57,7 @@ class App extends React.Component {
         </div>
       </AccordionPane>
 
-      <AccordionPane index={1}>
+      <AccordionPane>
         <div className="heading">
           <h4 className="title">What does X mean?</h4>
 
@@ -100,10 +100,6 @@ All other props are passed down to the `div` root element as usual.
 ### AccordionPane
 
 All other props are passed down to the `div` root element as usual.
-
-| Prop  | Type | Description |
-| ----- | ---- | ----------- |
-| index | `number` (required) | The number to identify the accordion |
 
 > **NOTE**: `AccordionButton` ignores `className`.
 
