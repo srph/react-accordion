@@ -14,7 +14,7 @@ afterEach(() => {
   sandbox.restore()
 })
 
-test.only('it should call change active when clicked', () => {
+test('it should call change active when clicked', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
       <AccordionPane>
@@ -36,7 +36,7 @@ test.only('it should call change active when clicked', () => {
   expect(node.props().accordion.active).toBe(1)
 })
 
-test.only('it should pass active to children', () => {
+test('it should pass active to children', () => {
   const wrapper = mount(
     <Accordion paneClassName="pane">
       <AccordionPane>
@@ -52,7 +52,7 @@ test.only('it should pass active to children', () => {
   expect(button.text()).toBe('No')
 })
 
-test.only('it should pass through props to the node element except some', () => {
+test('it should pass through props to the node element except some', () => {
   const handleOpen = sandbox.spy()
 
   const wrapper = mount(

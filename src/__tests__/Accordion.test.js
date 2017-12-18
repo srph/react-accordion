@@ -10,7 +10,7 @@ test('it should render children', () => {
   expect(wrapper.contains(<CoolKid />)).toBe(true)
 })
 
-test.only('it should add index to its children', () => {
+test('it should add index to its children', () => {
   const CoolKid = () => <div />
   const BadKid = () => <div />
   const wrapper = mount(<Accordion paneClassName="open"><CoolKid /><BadKid /></Accordion>)
